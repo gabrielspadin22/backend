@@ -1,3 +1,5 @@
+const fs = require('fs');
+
 class ProductManager {
     constructor() {
         this.products = [];
@@ -14,11 +16,14 @@ class ProductManager {
         this.id++;
 
         this.products.push(product);
+
+        fs.writeFileSync('./db.txt', JSON.stringify(this.products))
+
         console.log("Producto agregado exitosamente.");
     }
 // Obtencion de todos los productos existentes 
     getProducts() {
-        return this.products;
+        return JSON.parse(fs.readFileSync('./db.txt', "utf-8"));
     }
 // Busqueda de un producto por su ID
     getElementById(id) {

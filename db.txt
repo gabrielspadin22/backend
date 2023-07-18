@@ -1,0 +1,1 @@
+[{"title":"Epico producto 1","description":"Epica descripción del epico producto 1","price":10.99,"thumbnail":"epica_imagen1.jpg","code":"ABC123","stock":12,"id":1},{"title":"Epico producto 2","description":"Epica descripción del epico producto 1","price":19.99,"thumbnail":"epica_imagen2.jpg","code":"XYZ456","stock":5,"id":2}]
